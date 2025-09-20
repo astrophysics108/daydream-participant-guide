@@ -1,7 +1,9 @@
 ---
+import { isTransitionBeforePreparationEvent, isTransitionBeforeSwapEvent } from "astro:transitions/client";
 import buildingsback from "../../public/images/buildings-back.png";
 import buildingsfront from "../../public/images/buildings-front.png";
 import logo from "../../public/images/logo.png";
+import { updateScrollPosition } from "astro/dist/transitions/router";
 ---
 <html>
 	<head>
@@ -28,7 +30,24 @@ import logo from "../../public/images/logo.png";
 				A game jam is an event where you form teams 
 				and make a video game over the course of the day.
 			</h3>
-			<p></p>
+			<p>Yep, that's it. Daydream will essentially be a day where you 
+				get into a bunch of teams, make friends, make a game you're proud of, share that game to the world, and have 
+				a whole lot of fun :). There's a simple schedule on <a href="daydream.hackclub.com/cambridge">
+				the main event website</a> but if you want one in more detail, here it is:
+			</p>
+		</div>
+		<div id="schedule", class="text-section">
+			<h3>
+				8-45-9am: Registration
+			</h3>
+			<p>This is the bit where all of you are going to come to 
+				the venue (<a href="https://maps.app.goo.gl/BboLuXMJbDvNGGYj7">The Raspberry Pi Foundation
+				on Hills Road - NOT the shop!</a>), 
+				and one of us on the organising team are going to help you
+				get registered. Once we've confirmed you're on the signups list, 
+				we'll let you into the main building and you can choose somewhere
+				to sit down. WE WILL NOT LET YOU IN IF YOU'RE NOT SIGNED UP 
+				OR DON'T HAVE THE WAIVER FILLED IN! Make sure you get this done!</p>
 		</div>
 	</body>
 </html>
@@ -69,6 +88,10 @@ import logo from "../../public/images/logo.png";
 		padding-right: 15vw;
 		margin-top:3em;
 		
+	}
+
+	a{
+		color:#e461a9;
 	}
 
 
