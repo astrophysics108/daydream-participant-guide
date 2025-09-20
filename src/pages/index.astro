@@ -4,6 +4,7 @@ import buildingsback from "../../public/images/buildings-back.png";
 import buildingsfront from "../../public/images/buildings-front.png";
 import logo from "../../public/images/logo.png";
 import { updateScrollPosition } from "astro/dist/transitions/router";
+import { object } from "astro:schema";
 ---
 <html>
 	<head>
@@ -38,7 +39,7 @@ import { updateScrollPosition } from "astro/dist/transitions/router";
 		</div>
 		<div id="schedule", class="text-section">
 			<h3>
-				8-45-9am: Registration
+				8:45-9:10: Registration
 			</h3>
 			<p>This is the bit where all of you are going to come to 
 				the venue (<a href="https://maps.app.goo.gl/BboLuXMJbDvNGGYj7">The Raspberry Pi Foundation
@@ -48,6 +49,64 @@ import { updateScrollPosition } from "astro/dist/transitions/router";
 				we'll let you into the main building and you can choose somewhere
 				to sit down. WE WILL NOT LET YOU IN IF YOU'RE NOT SIGNED UP 
 				OR DON'T HAVE THE WAIVER FILLED IN! Make sure you get this done!</p>
+			<h3>
+				9:10-10:00: Setup and Opening Ceremony
+			</h3>
+			<p>
+				Once everyone's sat down and settled, we'll give a short opening presentation
+				where all of the organisers and our lovely adult volunteers! We'll give you
+				a rundown of what's happening on the day and all of the important stuff you will need
+				to know. We'll also reveal the theme for the games, and then you'll get yourself
+				into teams of 2-3 people! It's completely fine if you don't know others who are coming,
+				hackathons are always great with friends (and it's not too late to get them to sign up!) 
+				but lots of people make teams with people they don't know!
+			</p>
+			<h3>
+				10:00-13:00: Start working on your projects!
+			</h3>
+			<p>
+				This is the bit where you will get cracking on your project! We'll also run a workshop in this bit, 
+				where I'll be showing those who are less confident with game dev how to make a platformer game
+				in <a href="https://godotengine.org/">Godot</a>, which they can then expand to make their own games!
+				Everyone who joins in with the workshop will also get some cool free stuff!
+			</p>
+			<h3>
+				13:00-14:00: Lunch
+			</h3>
+			<p>
+				Yum. We'll also be running a little video call with some other daydream events, so 
+				make sure not to miss that!
+			</p>
+			<h3>
+				15:00-15:30: Talk by Learn Anything founder
+			</h3>
+			<p>We'll be getting a super inspiring talk by the founder of 
+				<a href="https://www.learnanything.com/">Learn Anything</a>: it's 
+				a great opportunity to learn from a really awesome person who
+				does the kinds of things you guys might want to do in the future!
+			</p>
+			<h3>
+				15:30-18:00: More projects stuff :)
+			</h3>
+			<p> More time to work on your project and make it really super awesome!</p>
+			<h3>
+				18:00-19:00: Dinner
+			</h3>
+			<p>Double yum. Our dinner will be courtesy of 
+				<a href="https://www.aromi.co.uk/">Aromi's</a> generosity,
+			so it's sure to be absolutely 🔥</p>
+			<h3>
+				19:00-20:30: Ship your project and vote!
+			</h3>
+			<p>EVERYONE. MUST. SHIP. This is the bit where we share your project
+				to the world (and to hack club) by submitting it to <a href="https://itch.io">itch</a>. 
+				If you don't submit your project, you won't get a super cool daydream shirt (no exceptions, we're
+				sorry but we have to do this!). So we are ALL GOING TO SHIP. 
+				We'll be using <a href="https://podium.hackclub.com">podium</a> to vote, you all will get
+				to vote on a winning team, who will get an awesome prize!
+			</p>
+			<h3>20:30-20:45: Winners and closing ceremony</h3>
+			<p>We'll do a short wrap-up presentation and then we'll let you all go home!</p>
 		</div>
 	</body>
 </html>
