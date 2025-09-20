@@ -4,14 +4,31 @@ import buildingsfront from "../../public/images/buildings-front.png";
 import logo from "../../public/images/logo.png";
 ---
 <html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	</head>
 	<body>
 		<div class = "top">
 			<img class="imagetop" src={buildingsback.src}>
 			<img class="imagetop" src={buildingsfront.src}>
 			<img class="logo" src={logo.src}>
-			<p>A guide for participants :)</p>
+			<p>✨A guide for participants✨</p>
 		</div>
-		
+		<div id="gamejam" class="text-section">
+			<h1>So... what even is a game jam?</h1>
+			<p>I've been asked this question many, many times!
+				Which sort of makes sense: people say "Come to the hackathon!"
+				or "Hey, why not sign up for this cool game jam thing?" without 
+				actually telling you what a game jam is or what you're going to be doing on the day.
+				So fair enough if you're confused! Luckily, it's really simple:
+			</p>
+			<h2 style="text-decoration: underline;">
+				A game jam is literally an event where you form teams 
+				and make a video game over the course of the day.
+			</h2>
+		</div>
 	</body>
 </html>
 <style>
@@ -38,6 +55,21 @@ import logo from "../../public/images/logo.png";
 
 	p {
 		text-align:center;
+		font-family: "Atkinson Hyperlegible", sans-serif;
+		font-size: large;
+		color:#466176;
 	}
+
+	.text-section {
+		color:#466176;
+		text-align:center;
+		font-family: "Atkinson Hyperlegible", sans-serif;
+		padding-left: 15vw;
+		padding-right: 15vw;
+		margin-top:3em;
+		
+	}
+
+
 
 </style>
